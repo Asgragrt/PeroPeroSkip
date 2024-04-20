@@ -4,7 +4,7 @@ using MelonLoader;
 using AccessTools = HarmonyLib.AccessTools;
 using HarmonyMethod = HarmonyLib.HarmonyMethod;
 
-namespace SkipLogo.Patches;
+namespace PeroPeroSkip.Patches;
 
 internal static class SkipToHomePatch
 {

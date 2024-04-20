@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using Il2CppAssets.Scripts.PeroTools.Managers;
 
-namespace SkipLogo.Patches;
+namespace PeroPeroSkip.Patches;
 
 [HarmonyPatch(typeof(SceneManager), nameof(SceneManager.Init))]
 internal static class SceneInitPatch

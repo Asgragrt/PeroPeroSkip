@@ -1,6 +1,6 @@
-﻿using SkipLogo.Patches;
+﻿using PeroPeroSkip.Patches;
 
-namespace SkipLogo.Managers;
+namespace PeroPeroSkip.Managers;
 
 using static SettingsManager;
 

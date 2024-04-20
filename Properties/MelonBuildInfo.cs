@@ -1,8 +1,8 @@
-﻿namespace SkipLogo.Properties;
+﻿namespace PeroPeroSkip.Properties;
 
 internal static class MelonBuildInfo
 {
-    internal const string ModName = "SkipLogo";
+    internal const string ModName = "PeroPeroSkip";
 
     internal const string ModAuthor = "Asgragrt";
 

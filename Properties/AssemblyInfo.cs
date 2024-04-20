@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using MelonLoader;
-using static SkipLogo.Properties.MelonBuildInfo;
-using Main = SkipLogo.Main;
+using static PeroPeroSkip.Properties.MelonBuildInfo;
+using Main = PeroPeroSkip.Main;
 
 [assembly: MelonInfo(typeof(Main), ModName, ModVersion, ModAuthor)]
 [assembly: MelonGame("PeroPeroGames", "MuseDash")]

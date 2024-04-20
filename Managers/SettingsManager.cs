@@ -1,7 +1,7 @@
 ﻿using MelonLoader;
-using SkipLogo.Properties;
+using PeroPeroSkip.Properties;
 
-namespace SkipLogo.Managers;
+namespace PeroPeroSkip.Managers;
 
 using static MelonBuildInfo;
 

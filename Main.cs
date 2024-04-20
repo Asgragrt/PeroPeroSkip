@@ -1,11 +1,11 @@
 ﻿using MelonLoader;
-using SkipLogo.Managers;
-using SkipLogo.Properties;
+using PeroPeroSkip.Managers;
+using PeroPeroSkip.Properties;
 
-namespace SkipLogo;
+namespace PeroPeroSkip;
 
-using static SettingsManager;
 using static ModManager;
+using static SettingsManager;
 
 public class Main : MelonMod
 {
