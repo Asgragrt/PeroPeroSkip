@@ -3,7 +3,7 @@ using Il2CppAccount;
 using Il2CppAssets.Scripts.GameCore.Managers;
 using Il2CppAssets.Scripts.PeroTools.Commons;
 using Il2CppUI.Welcome;
-using MelonLoader;
+using PeroPeroSkip.Utils;
 using AccessTools = HarmonyLib.AccessTools;
 using HarmonyMethod = HarmonyLib.HarmonyMethod;
 
@@ -15,11 +15,12 @@ internal static class SkipToWelcomePatch
     {
         var prefix = Prefix;
         harmony.Patch(TargetMethod(), new HarmonyMethod(prefix.Method));
-        Melon<Main>.Logger.Msg("Patched WelcomeProgram.Start");
+        Logger.Debug("Patched WelcomeProgram.Start.");
     }
 
     private static bool Prefix(WelcomeProgram __instance)
     {
+        Logger.Debug("Skipping to welcome scene.");
         var mainManager = Singleton<MainManager>.instance;
         mainManager.InitLanguageFirst();
 

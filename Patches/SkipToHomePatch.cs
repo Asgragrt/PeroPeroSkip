@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using Il2CppAssets.Scripts.PeroTools.Managers;
 using MelonLoader;
+using PeroPeroSkip.Utils;
 using AccessTools = HarmonyLib.AccessTools;
 using HarmonyMethod = HarmonyLib.HarmonyMethod;
 
@@ -14,7 +15,7 @@ internal static class SkipToHomePatch
     {
         var prefix = Prefix;
         harmony.Patch(TargetMethod(), new HarmonyMethod(prefix.Method));
-        Melon<Main>.Logger.Msg("Patched SceneManager.LoadSceneSync");
+        Logger.Debug("Patched SceneManager.LoadSceneSync.");
     }
 
     private static void Prefix(ref string sName)
@@ -22,6 +23,8 @@ internal static class SkipToHomePatch
         if (!sName.Contains("Welcome")) return;
 
         sName = SystemScene;
+        
+        Logger.Debug($"Renamed scene to {sName}.");
     }
 
     private static MethodBase TargetMethod() =>

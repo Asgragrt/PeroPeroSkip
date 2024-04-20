@@ -1,6 +1,7 @@
 ﻿using MelonLoader;
 using PeroPeroSkip.Managers;
 using PeroPeroSkip.Properties;
+using PeroPeroSkip.Utils;
 
 namespace PeroPeroSkip;
 
@@ -13,6 +14,6 @@ public class Main : MelonMod
     {
         Load();
         PatchMethods(HarmonyInstance);
-        LoggerInstance.Msg($"{MelonBuildInfo.ModName} has loaded correctly!");
+        Logger.Msg($"{MelonBuildInfo.ModName} has loaded correctly!");
     }
 }
