@@ -27,19 +27,4 @@ public static class Logger
     {
         LocalLogger.Warning(message);
     }
-
-    private class DebugType(string initMessage, string finishMessage, string errorMessage = "")
-    {
-        private readonly string ErrorMessage = errorMessage;
-
-        private readonly string FinishMessage = finishMessage;
-
-        private readonly string StartMessage = initMessage;
-
-        internal string Error(object m) => $"Couldn't {ErrorMessage} {m}.";
-
-        internal string Finish(object m) => $"{FinishMessage} {m}!";
-
-        internal string Start(object m) => $"{StartMessage} {m}...";
-    }
 }
