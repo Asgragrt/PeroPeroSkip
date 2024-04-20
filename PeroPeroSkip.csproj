@@ -35,14 +35,11 @@
         <Reference Include="UnityEngine.CoreModule">
             <HintPath>$(MD_DIRECTORY)\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
         </Reference>
-        <Reference Include="Assembly-CSharp-firstpass">
-            <HintPath>$(MD_DIRECTORY)\MelonLoader\Il2CppAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
-        </Reference>
         <Reference Include="Il2CppSirenix.Serialization">
             <HintPath>$(MD_DIRECTORY)\MelonLoader\Il2CppAssemblies\Il2CppSirenix.Serialization.dll</HintPath>
         </Reference>
-        <Reference Include="UnityEngine.UI">
-            <HintPath>$(MD_DIRECTORY)\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+        <Reference Include="Il2CppPeroTools2.Account">
+            <HintPath>$(MD_DIRECTORY)\MelonLoader\Il2CppAssemblies\Il2CppPeroTools2.Account.dll</HintPath>
         </Reference>
     </ItemGroup>
 

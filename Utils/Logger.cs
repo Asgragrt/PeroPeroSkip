@@ -6,6 +6,7 @@ namespace PeroPeroSkip.Utils;
 public static class Logger
 {
     private static readonly MelonLogger.Instance LocalLogger = Melon<Main>.Logger;
+
     internal static void Debug(object message)
     {
         if (!SettingsManager.DebugLog) return;
@@ -29,14 +30,16 @@ public static class Logger
 
     private class DebugType(string initMessage, string finishMessage, string errorMessage = "")
     {
-        private readonly string StartMessage = initMessage;
+        private readonly string ErrorMessage = errorMessage;
 
         private readonly string FinishMessage = finishMessage;
 
-        private readonly string ErrorMessage = errorMessage;
+        private readonly string StartMessage = initMessage;
+
+        internal string Error(object m) => $"Couldn't {ErrorMessage} {m}.";
+
+        internal string Finish(object m) => $"{FinishMessage} {m}!";
 
         internal string Start(object m) => $"{StartMessage} {m}...";
-        internal string Finish(object m) => $"{FinishMessage} {m}!";
-        internal string Error(object m) => $"Couldn't {ErrorMessage} {m}.";
     }
 }
