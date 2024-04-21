@@ -1,6 +1,14 @@
 # SkipLogo
 
+Skip the welcome sequence.
+
 ## ❗Check out my other [mods](https://github.com/Asgragrt#musedash-modding)❗
+
+## Settings
+
+* ``SkipToHome`` skips all the way to [home](#home.)
+* ``SkipToWelcome`` skips only up to the [welcome screen](#welcome).
+* ``DebugLog`` enables debug messages.
 
 ## Installation
 
@@ -10,6 +18,16 @@
 
 ### Steps
 
-1. Download the latest release from [releases](https://github.com/Asgragrt/RomajiSongName/releases/latest).
-2. Move `RomajiSongName.dll` to `${Your muse dash folder}/Mods`.
-3. Enable / Disable the mod from the configuration file found at `${Your muse dash folder}/UserData/RomajiSongName.cfg`.
+1. Download the latest release from [releases](https://github.com/Asgragrt/PeroPeroSkip/releases/latest).
+2. Move `PeroPeroSkip.dll` to `${Your muse dash folder}/Mods`.
+3. Enable / Disable the mod from the configuration file found at `${Your muse dash folder}/UserData/PeroPeroSkip.cfg`.
+
+## Scenes
+
+### Home
+
+![Home.jpg](Media/Home.jpg)
+
+### Welcome
+
+![Welcome.jpg](Media/Welcome.jpg)
