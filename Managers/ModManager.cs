@@ -7,7 +7,7 @@ using static SettingsManager;
 
 internal static class ModManager
 {
-    internal static void PatchMethods(HarmonyLib.Harmony harmony)
+    internal static void Init(HarmonyLib.Harmony harmony)
     {
         if (!IsEnabled)
         {
