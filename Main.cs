@@ -5,15 +5,12 @@ using PeroPeroSkip.Utils;
 
 namespace PeroPeroSkip;
 
-using static ModManager;
-using static SettingsManager;
-
 public class Main : MelonMod
 {
     public override void OnInitializeMelon()
     {
-        Load();
-        PatchMethods(HarmonyInstance);
+        SettingsManager.Load();
+        ModManager.Init(HarmonyInstance);
         Logger.Msg($"{MelonBuildInfo.ModName} has loaded correctly!");
     }
 }
