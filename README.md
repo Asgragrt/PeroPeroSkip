@@ -2,13 +2,13 @@
 
 Skip the welcome sequence.
 
-## ❗Check out my other [mods](https://github.com/Asgragrt#musedash-modding)❗
+## ❗Check out my other [mods](https://github.com/Asgragrt/AsgraMDMods/blob/main/README.md)❗
 
 ## Settings
 
 The config file can be found at `${Your muse dash folder}/UserData/PeroPeroSkip.cfg`
 
-* ``SkipToHome`` skips all the way to [home](#home.)
+* ``SkipToHome`` skips all the way to [home](#home).
 * ``SkipToWelcome`` skips only up to the [welcome screen](#welcome).
 * ``DebugLog`` enables debug messages.
 
